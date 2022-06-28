@@ -22,7 +22,7 @@ jobs:
         run: npm run build
       - name: predeploy
         run: npm run build
-      - name: gh-pages -d build
-        run: npm run build
+      - name: gh-pages build
+        run: gh-pages -d build
       - name: unit test
         run: npm run test
