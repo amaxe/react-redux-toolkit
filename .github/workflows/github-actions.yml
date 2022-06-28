@@ -20,5 +20,9 @@ jobs:
         run: npm install
       - name: build project
         run: npm run build
+      - name: predeploy
+        run: npm run build
+      - name: gh-pages -d build
+        run: npm run build
       - name: unit test
         run: npm run test
