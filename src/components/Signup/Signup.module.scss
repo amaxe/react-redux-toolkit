@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  .button {
+    margin: 25px 0;
+  }
+
+  .link {
+    text-align: center;
+    text-decoration: none;
+  }
+}
