@@ -1,8 +1,8 @@
-import React from "react";
-import "./App.css";
-import { Signup } from "./components/Signup/Signup";
-import { Route, Routes } from "react-router-dom";
-import { Login } from "./components/Login/Login";
+import React from 'react'
+import './App.css'
+import { SignupPage } from './pages/SignupPage/SignupPage'
+import { Route, Routes } from 'react-router-dom'
+import { Login } from './pages/LoginPage/Login'
 
 function App() {
   return (
@@ -10,10 +10,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="login" element={<Login />} />
-        <Route path="signup" element={<Signup />} />
+        <Route path="signup" element={<SignupPage />} />
       </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
